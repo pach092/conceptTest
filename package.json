@@ -2,18 +2,22 @@
   "name": "concept-test",
   "version": "0.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "16.16.0",
+    "npm": "8.11.0"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build — prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
+    "@angular/cli": "~14.0.6",
+    "@angular/compiler-cli": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.0.0",
@@ -30,8 +34,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.6",
-    "@angular/cli": "~14.0.6",
-    "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
     "devextreme-cli": "latest",
     "devextreme-themebuilder": "^22.1.3",
